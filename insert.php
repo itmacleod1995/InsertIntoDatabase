@@ -18,5 +18,7 @@ if(isset($_POST['submit'])){
     
     $res = mysqli_query($conn, $query);
     mysqli_close($conn);
+
+    header("Location: index.php");
 }
 
