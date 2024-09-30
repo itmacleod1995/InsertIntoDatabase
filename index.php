@@ -11,7 +11,7 @@
 
         <h1>Insert Into Databse</h1>
 
-        <form action="" method="POST">
+        <form action="insert.php" method="POST">
             <div>
                 <label>ID</label>
                 <input type="text" name="id">
@@ -29,6 +29,8 @@
             <br>
             <button type="submit" name="submit">Submit</button>
         </form>
+
+        
 
         
         <script src="" async defer></script>
