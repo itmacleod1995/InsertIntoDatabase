@@ -11,6 +11,25 @@
 
         <h1>Insert Into Databse</h1>
 
+        <form action="" method="POST">
+            <div>
+                <label>ID</label>
+                <input type="text" name="id">
+            <div>
+            <br>
+            <div>
+                <label>Title</label>
+                <input type="text" name="title">
+            <div>
+            <br>
+            <div>
+                <label>Content</label>
+                <input type="text" name="content">
+            <div>
+            <br>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+
         
         <script src="" async defer></script>
     </body>
