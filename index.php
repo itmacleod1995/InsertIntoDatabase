@@ -30,6 +30,32 @@
             <button type="submit" name="submit">Submit</button>
         </form>
 
+        <br>
+        <br>
+
+        <table>
+
+        <?php
+            $query = "SELECT * FROM notes";
+            $conn = require_once("conn.php");
+
+            $res = mysqli_query($conn, $query);
+
+            echo "<tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Content</td>
+            </tr>";
+
+            while($result = mysqli_fetch_assoc($res)){
+                echo "<tr>" . "<td>" . $result['id'] . "</td>" .
+                     "<td>" . $result['title'] . "</td>" .
+                     "<td>" . $result['content'] . "</td>" . "</tr>";
+            }
+        ?>
+
+        </table>
+
         
 
         
