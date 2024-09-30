@@ -1,15 +1,17 @@
 <?php
 
+$db = "note_app";
 $username = "root";
 $password = "";
 $server_name = "localhost";
-$db = "note_app";
 
-try {
-    $pdo = new PDO("mysql:host=$server_name;dbname=$db", $username, $password);
-    return $pdo;
-    
-}catch (PDOException $e){
+$conn = mysqli_connect($server_name, $username, $password, $db);
+
+if(mysqli_connect_errno()){
     echo "Connection failed";
+    die();
+}else {
+    echo "Connection successful";
+    return $conn;
 }
 
